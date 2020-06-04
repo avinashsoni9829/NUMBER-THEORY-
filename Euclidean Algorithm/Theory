@@ -1,0 +1,47 @@
+
+EUCLIDEAN ALGORITHM FOR GCD:
+	
+	    
+	    gcd (a,b)  = {
+	    	              a    if b==0
+	    	              
+	    	              gcd(b,a mod b)   otherwise
+		             
+					 }
+					 
+					 
+	    
+		LCM(a,b) = a*b/gcd(a,b)
+		
+		
+		#properties:
+		    1) gcd(0,0) = 0
+		    
+			2) gcd(0,v) = v
+			
+			3) gcd(u,0) = u
+			 
+			4) if u and v are even then  gcd(u,v)= 2 * gcd(u/2,v/2)
+			
+			5) if u and v are odd then gcd(u,v) = gcd((u-v)/2,v)
+			
+			6) if u is even and v is odd gcd(u,v) = gcd(u/2,v)
+			
+			7) if u is odd and v is even gcd(u,v) = gcd(u,v/2)
+			
+			
+			
+		   
+			 
+					  
+          
+		  	
+		
+		#co prime:
+		    
+			two number having gcd=1
+			
+			ex: 9 and 28
+			
+		
+						  				 

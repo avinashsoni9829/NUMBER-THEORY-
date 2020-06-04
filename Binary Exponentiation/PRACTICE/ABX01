@@ -1,0 +1,35 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+
+ll int expo(ll int a,ll int b)
+{
+	ll int res=1;
+	while(b)
+	{
+		if(b&1)
+		res=(res*a)%9;
+		a=(a*a)%9;
+		b>>=1;
+		
+	}
+	return res?res:9;
+	
+ } 
+ 
+ 
+int main()
+{
+	int t;
+	cin>>t;
+	while(t--)
+	{
+		ll int a ,n;
+		cin>>a>>n;
+		
+		cout<<expo(a%9,n)<<endl;
+		
+		
+		
+	}
+}

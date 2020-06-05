@@ -14,7 +14,9 @@
    2) Euclidean Algorithm
    
    theory : https://cp-algorithms.com/algebra/euclid-algorithm.html
-   
+             
+            https://codeforces.com/blog/entry/48481
+            
   practice:
   
   -> https://www.codechef.com/problems/GCDMOD

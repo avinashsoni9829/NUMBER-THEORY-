@@ -23,5 +23,8 @@
   
   -> https://codeforces.com/problemset/problem/664/A
   
+  -> https://codeforces.com/problemset/problem/1068/B
+  
+  
   
   

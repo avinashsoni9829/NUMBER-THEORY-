@@ -5,7 +5,7 @@ using namespace std;
 
 int noofdig(int N)
 {
-	return floor(log10(N))+1;
+return floor(log10(N))+1;
 }
 
 

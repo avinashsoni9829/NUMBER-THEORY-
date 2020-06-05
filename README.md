@@ -28,6 +28,8 @@
   -> https://practice.geeksforgeeks.org/problems/lcm-and-gcd/0
   
   -> https://practice.geeksforgeeks.org/problems/the-mighty-divisible-number/0
+  
+  -> https://www.geeksforgeeks.org/find-gcdan-c-where-a-n-and-c-can-vary-from-1-to-109/
  
   -> https://www.codechef.com/problems/GCDMOD
   

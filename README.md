@@ -30,8 +30,12 @@
   -> https://practice.geeksforgeeks.org/problems/the-mighty-divisible-number/0
   
   -> https://www.geeksforgeeks.org/find-gcdan-c-where-a-n-and-c-can-vary-from-1-to-109/
+  
+  -> https://www.geeksforgeeks.org/array-gcd-subset-belongs-given-array/
  
   -> https://www.codechef.com/problems/GCDMOD
+  
+  -> https://codeforces.com/contest/1285/problem/C
   
   -> https://codeforces.com/problemset/problem/1325/A
   
@@ -39,7 +43,7 @@
   
   -> https://codeforces.com/problemset/problem/1068/B
   
-  -> https://www.geeksforgeeks.org/array-gcd-subset-belongs-given-array/
+  
   
   
   

@@ -1,0 +1,48 @@
+
+#include <bits/stdc++.h>
+
+
+using namespace std;
+#define ll long long
+
+ll int countdiv(ll int n) 
+{ 
+    ll int cnt=0;
+        for (int i=1; i<=sqrt(n); i++) 
+    { 
+        if (n%i == 0) 
+        { 
+            
+            if (n/i == i) 
+                cnt++; 
+  
+            else 
+                cnt+=2; 
+        } 
+    }
+	
+	return cnt;
+	 
+}
+
+int main() {
+
+      int T=1;
+      //cin>>T;
+        while(T--)
+        {
+           ll int b;
+           cin>>b;
+           cout<<countdiv(b)<<"\n";
+           
+        	
+        	 
+		}
+
+
+
+        return 0;
+
+
+}
+

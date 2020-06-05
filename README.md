@@ -13,9 +13,13 @@
    
    2) Euclidean Algorithm
    
-   theory : https://cp-algorithms.com/algebra/euclid-algorithm.html
+   theory : 
    
-            https://codeforces.com/blog/entry/48481
+   https://cp-algorithms.com/algebra/euclid-algorithm.html
+   
+   https://codeforces.com/blog/entry/48481
+            
+   https://www.geeksforgeeks.org/tag/gcd-lcm/
             
   practice:
   

@@ -20,6 +20,8 @@
   practice:
   
   -> https://practice.geeksforgeeks.org/problems/lcm-and-gcd/0
+  
+  -> https://practice.geeksforgeeks.org/problems/the-mighty-divisible-number/0
  
   -> https://www.codechef.com/problems/GCDMOD
   

@@ -19,6 +19,8 @@
             
   practice:
   
+  -> https://practice.geeksforgeeks.org/problems/lcm-and-gcd/0
+ 
   -> https://www.codechef.com/problems/GCDMOD
   
   -> https://codeforces.com/problemset/problem/1325/A

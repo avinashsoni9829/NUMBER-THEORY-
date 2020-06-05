@@ -20,6 +20,8 @@
    https://codeforces.com/blog/entry/48481
             
    https://www.geeksforgeeks.org/tag/gcd-lcm/
+   
+   
             
   practice:
   
@@ -35,6 +37,7 @@
   
   -> https://codeforces.com/problemset/problem/1068/B
   
+  -> https://www.geeksforgeeks.org/array-gcd-subset-belongs-given-array/
   
   
   

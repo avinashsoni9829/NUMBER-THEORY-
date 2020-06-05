@@ -23,7 +23,6 @@ ll expo(ll a,ll b,ll m)
 	return ans;
 }
 
-
 ll gcdp(ll int a,ll int n,ll int c)
 {
 	if(a%c==0)

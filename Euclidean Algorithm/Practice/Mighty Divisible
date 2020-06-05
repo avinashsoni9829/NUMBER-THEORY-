@@ -1,0 +1,55 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define fio ios_base::sync_with_stdio(false);cin.tie(NULL);
+
+int noofdig(int N)
+{
+	return floor(log10(N))+1;
+}
+
+
+
+
+void solve()
+{
+    ll int x,y,z,n;
+    cin>>x>>y>>z>>n;
+    
+    ll int l= (x*y)/__gcd(x,y);
+    ll int lc= (l*z)/__gcd(l,z);
+    
+    ll int p=pow(10,n-1);
+    
+    ll int r= p%lc;
+    if(r==0)
+    {
+    	cout<<lc<<"\n";
+    	return;
+    	
+	}
+    
+    
+    if(noofdig((p+lc-r))<pow(10,n))
+    cout<<p+(lc-r)<<"\n";
+    else
+    cout<<-1<<"\n";
+    
+    
+    
+      
+    
+    
+}
+
+int main() {
+	fio
+	int T;
+	cin>>T;
+	while(T--)
+	{
+	    solve();
+	    
+	}
+	return 0;
+}

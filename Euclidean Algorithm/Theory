@@ -1,6 +1,6 @@
 
 EUCLIDEAN ALGORITHM FOR GCD:
-	
+- - - - - - - - - - - - - - - -
 	    
 	    gcd (a,b)  = {
 	    	              a    if b==0
@@ -10,12 +10,13 @@ EUCLIDEAN ALGORITHM FOR GCD:
 					 }
 					 
 					 
-	    
-		LCM(a,b) = a*b/gcd(a,b)
-		
+	    - - - - - - - - - - - - - - - - 
+	    |	LCM(a,b) = a*b/gcd(a,b)    |
+	    - - - - - - - - - - - - - - - - 	
 		
 		#properties:
-		    1) gcd(0,0) = 0
+		- - - - - -  
+		        1) gcd(0,0) = 0
 		    
 			2) gcd(0,v) = v
 			
@@ -38,7 +39,8 @@ EUCLIDEAN ALGORITHM FOR GCD:
 		  	
 		
 		#co prime:
-		    
+		 - - - - - -   
+			
 			two number having gcd=1
 			
 			ex: 9 and 28
@@ -61,4 +63,43 @@ EUCLIDEAN ALGORITHM FOR GCD:
 		
 		}
 		
+		
+		
+		
+		
+#finding LCM without using GCD
+- - - - - - - - - - - - - - - - - - - - 		
+		
+#include<bits/stdc++.h>
+using namespace std;
+
+int LCM(int a,int b)
+{
+	for(int i=max(a,b); ; i+=max(a,b))
+	{
+		if(i%(min(a,b))==0)
+		return i;
+		
+	}
+}
+
+
+
+int main()
+{
+	while(1)
+	{
+		int a,b;
+		cin>>a>>b;
+		cout<<LCM(a,b)<<endl;
+		
+	}
+	
+}
+
+
+
+
+
+
 						  				 

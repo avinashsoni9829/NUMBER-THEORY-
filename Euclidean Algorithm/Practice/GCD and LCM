@@ -1,0 +1,52 @@
+
+
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long 
+
+
+
+ll int gcdcomp(ll int a,ll int b)
+{
+    while(a!=b)
+    {
+        if(a>b)
+        a-=b;
+        else
+        b-=a;
+        
+    }
+    return a;
+    
+}
+
+
+ll int lcmcomp(ll int a,ll int b)
+{
+    ll int g=gcdcomp(a,b);
+    
+    return (a*b)/g;
+    
+    
+}
+
+void solve()
+{
+    ll int a,b;
+    cin>>a>>b;
+    
+    cout<<lcmcomp(a,b)<<" "<<gcdcomp(a,b)<<endl;
+    
+    
+    
+}
+
+int main() {
+	int T;
+	cin>>T;
+	while(T--)
+	{
+	   solve();
+	}
+	return 0;
+}

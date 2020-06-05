@@ -42,6 +42,23 @@ EUCLIDEAN ALGORITHM FOR GCD:
 			two number having gcd=1
 			
 			ex: 9 and 28
-			
+		
+		
+		#iterative approach:
+		
+		long long int gcd(long long int a,long long int b)
+		{
+		     while(a!=b)
+		     {
+		     if(a>b)
+		     a-=b;
+		     else
+		     b-=a;
+		     }
+		     
+		     return a;
+		     
+		
+		}
 		
 						  				 

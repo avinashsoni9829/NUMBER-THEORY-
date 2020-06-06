@@ -3,7 +3,7 @@ Extended Euclidean Algorithm:
 	
    1)	    it allows the gcd to be represented in terms of a and b  in the following equation:
 		    
-		     ax+by=g
+		     ax+by=g                    - eq(1)
 		
 			 where g is the gcd(a,b)
 	
@@ -12,4 +12,38 @@ Extended Euclidean Algorithm:
 	
 	
 	        
-				     
+    
+    let x1 and y1 be the values obtained after the recursive call to x1 and y1 then in the eq(1) [ ax + by = g]
+    we get
+    
+    x=y1-floor(b/a)*x1;
+    
+	y=x1;
+    
+    
+    #implementation:
+    	
+    	
+    	int gcdext(int a,int b,int *x,int *y)
+    	{
+    		if(a==0)
+    		{
+    			*x=0;
+    			*y=1;
+    			return b;
+			}
+			
+			int x1,y1;
+			
+			int gcd=gcdext(b%a,a,&x1,&y1);
+			*x=y1-(b/a)*x1;
+			*y=x1;
+			
+			return gcd;
+		}
+		
+		
+		
+		#NOTE:
+			
+			extended euclidean algorithm is useful when a  and b are co- prime

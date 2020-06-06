@@ -46,4 +46,8 @@ Extended Euclidean Algorithm:
 		
 		#NOTE:
 			
-			extended euclidean algorithm is useful when a  and b are co- prime
+			* extended euclidean algorithm is useful when a  and b are co- prime
+			
+			* it is useful for computing modulo inverse
+			
+			

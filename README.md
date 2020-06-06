@@ -44,6 +44,23 @@
   -> https://codeforces.com/problemset/problem/1068/B
   
   
+  3) Extended Euclidean Algorithm
+  
+  theory:
+  
+  https://cp-algorithms.com/algebra/extended-euclid-algorithm.html
+  
+  https://brilliant.org/wiki/extended-euclidean-algorithm/
+  
+  https://www.geeksforgeeks.org/euclidean-algorithms-basic-and-extended/
+  
+  
+  practice:
+  
+  
+  
+  
+  
   
   
   

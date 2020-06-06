@@ -1,0 +1,15 @@
+Extended Euclidean Algorithm:
+ 	
+	
+   1)	    it allows the gcd to be represented in terms of a and b  in the following equation:
+		    
+		     ax+by=g
+		
+			 where g is the gcd(a,b)
+	
+	
+	2)      it can be viewed as the reciprocal of modular exponentiation
+	
+	
+	        
+				     

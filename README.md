@@ -70,7 +70,7 @@
           
   https://www.geeksforgeeks.org/linear-diophantine-equations/
           
-  https://brilliant.org/wiki/linear-diophantine-equations-one-equation/\
+  https://brilliant.org/wiki/linear-diophantine-equations-one-equation/
           
   
   

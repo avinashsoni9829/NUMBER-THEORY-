@@ -62,10 +62,15 @@
   
   4)Linear Diophantine Equations:
   
-  Theory: https://cp-algorithms.com/algebra/linear-diophantine-equation.html
-          https://stackoverflow.com/questions/9990491/how-to-solve-linear-diophantine-equations-in-programming
-          https://www.geeksforgeeks.org/linear-diophantine-equations/
-          https://brilliant.org/wiki/linear-diophantine-equations-one-equation/\
+  Theory: 
+  
+  https://cp-algorithms.com/algebra/linear-diophantine-equation.html
+  
+  https://stackoverflow.com/questions/9990491/how-to-solve-linear-diophantine-equations-in-programming
+          
+  https://www.geeksforgeeks.org/linear-diophantine-equations/
+          
+  https://brilliant.org/wiki/linear-diophantine-equations-one-equation/\
           
   
   

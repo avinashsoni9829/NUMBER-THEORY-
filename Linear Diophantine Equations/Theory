@@ -1,0 +1,74 @@
+general LDE : ax+by=c
+
+classical problems:  find one solution
+                     find all solution
+                     solutions in a given interval
+                     solution with maximum value of x+y
+
+
+# degenerate case:      when a=0 and b=0 then
+                      no solution (c=0) else
+                      infinite solution (c!=0)
+
+
+
+# finding one solution: this uses the extended euclidean algorithm
+
+                    ~  a and b are non-negative
+                    now we apply extended euclidean algorithm to find
+                    1) gcd of a and b
+                    2) two values x1 and y1
+
+                    such that  a(x1)+b(y1)=g(__gcd(a,b));
+
+                    now if c is divisible by g then we have a solution otherwise
+
+                    if c is divisible and we have a solution then
+                    one of the solution is:
+                   from this equation : a*x1*(c/g) + b*y1*(c/g) =g
+                    s1=x1*(c/g)  and s2=y1*(c/g)
+
+# getting all solutions :
+
+                    from s1 and s2 we can get the other solutions to the equation
+
+                    as a*s1+b*s2=c
+
+                    now adding b/g to s1 and removing a/g from s2 would not break anything in the equation
+
+
+                    so : a(s1+b/g)+b(s2-a/g )=as1+bs2+a*b/g-b*a/g=c
+
+                    so the general solution for this equation will be
+
+                    x=s1+k*b/g
+                    y=s2-k*a/g
+
+
+
+
+# finding no of solution in given range: can be played along with the use of general solution of the equation
+
+# finding solution with maximum value of x+y
+
+
+(From above)
+x+y        = s1+s2+k(b-a)/g
+
+if a<b then select smallest value of k
+if a>b then select the largest value of k
+
+
+
+#general Method to Solve LDE:  ax+by=c
+
+ 1) divide LDE by g i,e g=gcd(a,b)
+
+ 2) now gcd(a,b)==1
+
+ 3) find solution to aU+bY=1 using extended euclidean algorithm
+
+ 4) multiply equation by c  now we have a(Uc)+v=b(Yc)=c
+
+ so our solution will be Uc and Yc
+ 

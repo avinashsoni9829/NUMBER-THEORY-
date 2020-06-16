@@ -71,6 +71,12 @@
   https://www.geeksforgeeks.org/linear-diophantine-equations/
           
   https://brilliant.org/wiki/linear-diophantine-equations-one-equation/
+  
+  practice:
+  
+  https://codeforces.com/contest/633/problem/A
+  
+  https://www.codechef.com/problems/COPR16G
           
   
   

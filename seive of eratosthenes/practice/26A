@@ -1,0 +1,104 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define endl '\n'
+#define ll long long int
+#define vi vector<int>
+#define vl vector<ll>
+#define inp(x)  for(auto &t:x) cin>>t;
+#define itr     vector<int>::iterator
+#define debug(a) cout << #a << "=" << a << ' '<<endl;
+#define out(x)  for(auto &t:x) cout<<t<<" "; cout<<endl;
+#define ff first
+#define ss second
+#define pb push_back
+#define initialize(a,v)  for(int i=0;i<a.size();++i) a[i]=v;
+#define all(x) x.begin(),x.end()
+
+const int mx=3000;
+
+vector<bool>prime(mx+1,true);
+
+void seive()
+{
+	prime[0]=prime[1]=false;
+	for(int i=2;i*i<=mx;++i)
+	{
+		if(prime[i])
+		{
+			for(int j=i*i;j<=mx;j+=i)
+			prime[j]=false;
+
+		}
+	}
+}
+bool chk(int n)
+{
+	int cnt=0;
+	for(int i=1;i<=sqrt(n);++i)
+	{
+		if(n%i==0)
+		{
+			if(n/i==i)
+			{
+			//	debug(i);
+				if(prime[i])
+				cnt++;
+			}
+			else
+			{
+			//	debug(i);
+			//	debug(n/i);
+
+				if(prime[i])
+				cnt++;
+				if(prime[n/i])
+				cnt++;
+			}
+		}
+	}
+	if(cnt==2)
+	return true;
+	else
+	return false;
+
+
+}
+
+
+
+
+void solve()
+{
+
+int n;
+cin>>n;
+vi div;
+int cnt=0;
+
+for(int i=1;i<=n;++i)
+{
+	if(chk(i))
+	cnt++;
+}
+cout<<cnt<<endl;
+
+
+
+
+
+}
+
+
+
+int main()
+{
+	seive();
+	ios_base::sync_with_stdio(false);cin.tie(NULL);
+
+	int t=1;
+	//cin>>t;
+	while(t--)
+	{
+		solve();
+	}
+}

@@ -1,0 +1,78 @@
+#include<bits/stdc++.h>
+#define REP(i,n) for (int i = 1; i <= n; i++)
+#define mod 1000000007
+#define pb push_back
+#define ff first
+#define ss second
+#define ii pair<int,int>
+#define vi vector<int>
+#define vii vector<ii>
+#define lli long long int
+#define endl '\n'
+using namespace std;
+int status[100001];
+set<int> ar[100001];
+
+int main()
+{
+	int n , m , x;
+	char code;
+	cin>>n>>m;
+	REP(i , m)
+	{
+		cin>>code>>x;
+		if(code == '-')
+		{
+			if(status[x]){
+				vi di;
+				for(int j=2;j*j<=x;j++)
+				if(x % j == 0)
+				{
+					ar[j].erase(x);
+					if(j*j != x)
+					ar[x/j].erase(x);
+				}
+				if(x > 1)
+				ar[x].erase(x);
+				
+				status[x] = 0;
+				cout<<"Success\n";
+			}
+			else		  				  cout<<"Already off\n";
+		}
+		
+		else
+		{
+			if(status[x])
+			{
+				cout<<"Already on\n";
+				continue;
+			}
+			vi di;
+			for(int j=2;j*j<=x;j++)
+			if(x % j == 0)
+			{
+				di.pb(j);
+				if(j*j != x)
+				di.pb(x/j);
+			}
+			if(x > 1)
+			di.pb(x);
+			
+			
+			for(int j=0;j<di.size();j++)
+			if(ar[di[j]].size()>0)
+			{
+				cout<<"Conflict with "<<*ar[di[j]].begin()<<endl;
+				goto exit;
+			}
+			
+			for(int j=0;j<di.size();j++)
+			ar[di[j]].insert(x);
+			status[x] = 1;
+			cout<<"Success\n";
+			exit:;
+		}
+	}
+}
+

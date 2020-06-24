@@ -134,6 +134,29 @@
    https://www.hackerearth.com/practice/math/number-theory/primality-tests/tutorial/
    
    
+   7) Integer Factorization:
+      
+      Theory:
+      
+      https://cp-algorithms.com/algebra/factorization.html
+      
+      
+      practice:
+      
+      https://codeforces.com/problemset/problem/150/A
+      
+      https://codeforces.com/problemset/problem/172/D
+      
+      https://codeforces.com/problemset/problem/248/B
+      
+      https://codeforces.com/problemset/problem/762/A
+      
+      https://codeforces.com/problemset/problem/797/A
+      
+      https://codeforces.com/problemset/problem/1108/B
+      
+   
+   
   
   
   

@@ -16,12 +16,12 @@
 
    #fermat's Little theorem: p->prime number
                              a-> coprime integer
-                            
+
                              |pow(a,p-1)=1%p| this doesn't hold for composite numbers
 
     here we call base a as *fermat witness* for the compositines of p
 
-      -> we check all the number in the range [2...p-2] for the given equation  if at any point it doesn't hold then the number 
+      -> we check all the number in the range [2...p-2] for the given equation  if at any point it doesn't hold then the number
          is not prime
 
       -> now suppose if this holds for all the numbers in the range [2...p-2] this just proves that the number(p) may be prime
@@ -29,18 +29,51 @@
 
       -> charmichael numbers : composite numbers which follow the fermat little theorem
                                 ex: 561
-                                                                    
+
+
+      algorithm:
+     FermatPrimalityTesting(int N):
+    pick a random integer k     //not too less. not too high.
+    LOOP: repeat k times:
+        pick a random integer X in range (1,N-1)
+        if(X^(N-1)%N != 1):
+            return composite
+    return probably prime
 
 
   3) Miller-Rabin Primality test:
 
-       for a base a= [2......n-2] we check if 
+      *probablistic test
+
+      * based on the concept that  pow(x,2)=pow(y,2)%n but x!=(+-)y %n then n is composite
+
+       for a base a= [2......n-2] we check if
 
          pow(a,d)=1%n;
             or
-         pow(a,(pow(2,r)*d))=-1%n with r=[0....s-1] 
+         pow(a,(pow(2,r)*d))=-1%n with r=[0....s-1]
 
 
+       algorithm:
 
-                                             
-   
+     MillerRabin_PrimalityTesting(int N):
+    if N%2 = 0:
+        return composite
+
+    write N-1 as (2^R . D) where D is odd number
+    pick a random integer k     //not too less. not too high.
+
+    LOOP: repeat k times:
+        pick a random integer A in range [2,N-2]
+        X = A^D % N
+        if X = 1 or X = N-1:
+            continue LOOP
+        for i from 1 to r-1:
+            X = X^2 % N
+            if X = 1:
+                return composite
+            if X = N-1:
+                continue LOOP
+        return composite
+
+        return probably prime

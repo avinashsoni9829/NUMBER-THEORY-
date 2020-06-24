@@ -126,6 +126,8 @@
    
    https://www.hackerearth.com/practice/math/number-theory/primality-tests/tutorial/
    
+   https://crypto.stanford.edu/pbc/notes/numbertheory/millerrabin.html
+   
    
    practice:
    

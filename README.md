@@ -117,10 +117,12 @@
   
   https://www.codechef.com/problems/PRIMECLO
   
-  6) Primality Theorem:
+  6) Primality Theorems:
   
    theory:
+   
    https://cp-algorithms.com/algebra/primality_tests.html
+   
    
    https://www.hackerearth.com/practice/math/number-theory/primality-tests/tutorial/
    

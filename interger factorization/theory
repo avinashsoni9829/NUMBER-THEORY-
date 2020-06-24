@@ -1,0 +1,49 @@
+ -> it is important to make a probablistic primality test before starting to factorize a number so that we dont need to go for the 
+    worst time case.
+
+    #basic method
+
+    for(int i=1;i*i<=sqrt(n);++i)
+    {
+      if(n%i==0)
+      {
+        if(n/i==i)
+        factor=i;
+        else
+        {
+          factor = i;
+          factor = n/i;
+        }
+      }
+    }
+
+    #wheel factorization
+
+    check for divisblity by 2 and then move to odd numbers
+
+    vector<int>div;
+
+    if(n%2==0)
+    div.pb(2);
+
+    for(int i=3;i*i<=sqrt(n);i+=2)
+    {
+      if(n%i==0)
+      div.pb(i);
+      else
+      {
+        div.pb(i);
+        div.pb(n/i);
+      }
+    }
+
+
+
+
+    #advance topics:
+
+    fermat theorem
+    pollard rho algorithm
+    pollard p-1 method
+
+   

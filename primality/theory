@@ -1,0 +1,46 @@
+1) simple test:
+
+   bool isPrime(int x)
+   {
+     for(int i=2;i*i<=x;++i)
+     {
+       if(x%i==0)
+       return false;
+     }
+     return true;
+   }
+
+2) Fermat Primality test:
+
+   * this is a probablistic test
+
+   #fermat's Little theorem: p->prime number
+                             a-> coprime integer
+                            
+                             |pow(a,p-1)=1%p| this doesn't hold for composite numbers
+
+    here we call base a as *fermat witness* for the compositines of p
+
+      -> we check all the number in the range [2...p-2] for the given equation  if at any point it doesn't hold then the number 
+         is not prime
+
+      -> now suppose if this holds for all the numbers in the range [2...p-2] this just proves that the number(p) may be prime
+          (thats why it s called as a probablistic test)
+
+      -> charmichael numbers : composite numbers which follow the fermat little theorem
+                                ex: 561
+                                                                    
+
+
+  3) Miller-Rabin Primality test:
+
+       for a base a= [2......n-2] we check if 
+
+         pow(a,d)=1%n;
+            or
+         pow(a,(pow(2,r)*d))=-1%n with r=[0....s-1] 
+
+
+
+                                             
+   

@@ -143,17 +143,17 @@
       
       practice:
       
-      https://codeforces.com/problemset/problem/150/A
+     https://codeforces.com/problemset/problem/150/A
       
-      https://codeforces.com/problemset/problem/172/D
+     https://codeforces.com/problemset/problem/172/D
       
-      https://codeforces.com/problemset/problem/248/B
+     https://codeforces.com/problemset/problem/248/B
       
-      https://codeforces.com/problemset/problem/762/A
+     https://codeforces.com/problemset/problem/762/A
       
-      https://codeforces.com/problemset/problem/797/A
+     https://codeforces.com/problemset/problem/797/A
       
-      https://codeforces.com/problemset/problem/1108/B
+     https://codeforces.com/problemset/problem/1108/B
       
    
    

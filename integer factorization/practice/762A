@@ -1,0 +1,88 @@
+#include<bits/stdc++.h>
+using namespace std;
+const long long modu=1e9+7;
+#define endl '\n'
+#define ll long long int
+#define vi vector<int>
+#define vl vector<ll>
+#define inp(x)  for(auto &t:x) cin>>t;
+#define itr     vector<int>::iterator
+#define debug(a) cout << #a << "=" << a << ' '<<endl;
+#define out(x)  for(auto &t:x) cout<<t<<" "; cout<<endl;
+#define ff first
+#define ss second
+#define pb push_back
+#define initialize(a,v)  for(int i=0;i<a.size();++i) a[i]=v;
+#define all(x) x.begin(),x.end()
+#define mpt for(auto it=mp.begin();it!=mp.end();it++)
+#define trav(x) for(int i=0;i<(int)x.size();++i)
+
+#define mkp(a,b) make_pair(a,b)
+#define sz(x)  (int)x.size()
+int noofdig(int N)
+{
+	return floor(log10(N))+1;
+}
+int bits_count(unsigned int u)
+{
+     unsigned int uCount;
+
+     uCount = u - ((u >> 1) & 033333333333) - ((u >> 2) & 011111111111);
+     return ((uCount + (uCount >> 3)) & 030707070707) % 63;
+}
+
+
+
+
+void solve()
+{
+
+	 ll n,k;
+	 cin>>n>>k;
+   vl div;
+
+
+
+	 for(ll  i=1;i*i<=n;i++)
+	 {
+		 if(n%i==0)
+		 {
+		  div.pb(i);
+
+			 if(i*i!=n)
+			 div.pb(n/i);
+		 }
+
+	 }
+
+	 //out(div)
+
+
+
+
+	 sort(all(div));
+	 if((ll)div.size()>=k)
+	 cout<<div[k-1]<<endl;
+	 else
+	 cout<<-1<<endl;
+
+
+
+
+
+}
+
+
+
+int main()
+{
+	ios_base::sync_with_stdio(false);cin.tie(NULL);
+	srand(chrono::high_resolution_clock::now().time_since_epoch().count());
+
+	int t=1;
+	//cin>>t;
+	while(t--)
+	{
+		solve();
+	}
+}

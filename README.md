@@ -155,6 +155,21 @@
    https://codeforces.com/problemset/problem/797/A
       
    https://codeforces.com/problemset/problem/1108/B
+   
+   
+   8) Euler Totient Function
+   
+   Theory:
+   
+   https://cp-algorithms.com/algebra/phi-function.html
+   
+   https://www.geeksforgeeks.org/eulers-totient-function/
+   
+   https://brilliant.org/wiki/eulers-totient-function/
+   
+   practice:
+   
+   
       
    
    

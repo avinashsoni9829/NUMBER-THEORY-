@@ -74,9 +74,9 @@
   
   practice:
   
-  https://codeforces.com/contest/633/problem/A
+  -> https://codeforces.com/contest/633/problem/A
   
-  https://www.codechef.com/problems/COPR16G
+  -> https://www.codechef.com/problems/COPR16G
           
   
   5) seive of eratosthenes:
@@ -93,29 +93,29 @@
   
   practice:
   
-  https://codeforces.com/problemset/problem/26/A
+  -> https://codeforces.com/problemset/problem/26/A
   
-  https://codeforces.com/contest/776/problem/B
+  -> https://codeforces.com/contest/776/problem/B
   
-  https://codeforces.com/problemset/problem/17/A
+  -> https://codeforces.com/problemset/problem/17/A
   
-  https://codeforces.com/problemset/problem/154/B
+  -> https://codeforces.com/problemset/problem/154/B
   
-  https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/priment/
+  -> https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/priment/
   
-  https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/handshakes-c5ab2577/
+  -> https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/handshakes-c5ab2577/
   
-  https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/tic-tac-toe/
+  -> https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/tic-tac-toe/
   
-  https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/calculate-the-power/
+  -> https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/calculate-the-power/
   
-  https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/rhezo-and-big-powers-1/
+  -> https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/rhezo-and-big-powers-1/
   
-  https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/beautiful-primes/
+  -> https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/beautiful-primes/
   
-  https://www.codechef.com/problems/AMR14E
+  -> https://www.codechef.com/problems/AMR14E
   
-  https://www.codechef.com/problems/PRIMECLO
+  -> https://www.codechef.com/problems/PRIMECLO
   
   6) Primality Theorems:
   
@@ -131,7 +131,7 @@
    
    practice:
    
-   https://www.hackerearth.com/practice/math/number-theory/primality-tests/tutorial/
+   -> https://www.hackerearth.com/practice/math/number-theory/primality-tests/tutorial/
    
    
    7) Integer Factorization:
@@ -144,17 +144,17 @@
       practice:
       
       
-   https://codeforces.com/problemset/problem/150/A
+   -> https://codeforces.com/problemset/problem/150/A
       
-   https://codeforces.com/problemset/problem/172/D
+   -> https://codeforces.com/problemset/problem/172/D
       
-   https://codeforces.com/problemset/problem/248/B
+   -> https://codeforces.com/problemset/problem/248/B
       
-   https://codeforces.com/problemset/problem/762/A
+   -> https://codeforces.com/problemset/problem/762/A
       
-   https://codeforces.com/problemset/problem/797/A
+   -> https://codeforces.com/problemset/problem/797/A
       
-   https://codeforces.com/problemset/problem/1108/B
+   -> https://codeforces.com/problemset/problem/1108/B
    
    
    8) Euler Totient Function
@@ -172,9 +172,9 @@
    practice:
    
    
-   https://www.hackerearth.com/practice/math/number-theory/totient-function/practice-problems/algorithm/phi-phi-phi/
+   -> https://www.hackerearth.com/practice/math/number-theory/totient-function/practice-problems/algorithm/phi-phi-phi/
    
-   https://www.hackerearth.com/practice/math/number-theory/totient-function/practice-problems/algorithm/nanachi-and-euler-totient-4-1f3f29ca/
+   -> https://www.hackerearth.com/practice/math/number-theory/totient-function/practice-problems/algorithm/nanachi-and-euler-totient-4-1f3f29ca/
    
    
    

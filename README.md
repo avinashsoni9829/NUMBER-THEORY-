@@ -167,7 +167,16 @@
    
    https://brilliant.org/wiki/eulers-totient-function/
    
+   https://www.geeksforgeeks.org/tag/euler-totient/
+   
    practice:
+   
+   
+   https://www.hackerearth.com/practice/math/number-theory/totient-function/practice-problems/algorithm/phi-phi-phi/
+   
+   https://www.hackerearth.com/practice/math/number-theory/totient-function/practice-problems/algorithm/nanachi-and-euler-totient-4-1f3f29ca/
+   
+   
    
    
       

@@ -1,0 +1,125 @@
+1) it is used to count the number of integer between [1...N] which are Co-Prime to N
+
+2) also known as phi function
+
+co prime are those numbers  whoose gcd=1
+
+this also means that they don't share any prime divisor
+
+
+#basic implementation of phi function
+
+int phi(int n)
+{
+  int cnt=0;
+  for(int i=1;i<=n;++i)
+  {
+    if(__gcd(i,n)==1)
+    cnt++;
+  }
+
+  return cnt;
+
+}
+
+
+time complexity: O(N*logN)
+
+
+
+ #primes and totient function
+
+
+ * phi(P)=P-1 where P is a prime number
+
+ * phi(pow(P,x))=pow(P,x)-no of integers which are not co-prime with P
+                =pow(P,x)-pow(P,x-1)
+                =pow(P,x-1)(P-1)
+
+ * euler totient function is a multiplicative function  i,e (f(n*m)=f(n)*f(m)) where gcd(n,m)=1
+
+
+ #use
+
+ let f(x) be multiplicative then
+ to find f(N)
+ where
+ N=pow(p1,x1)*pow(p2,x2)*pow(p3,x3)....*pow(pk,xk)
+
+    basically this is the prime factorization of N
+
+so acc to the property of multiplicative function we have
+
+f(N)=f(pow(p1,x1))*f(pow(p2,x2))......*f(pow(pk,xk))
+
+now for N we have the divisor count d(N) as
+d(N)=(x1+1)*(x2+1)*(x3+1)*....*(xk+1)
+
+now the divisor_count function is also multiplicative so
+d(N)=d(pow(p1,x1))*d(pow(p2,x2))......*d(pow(pk,xk))
+
+
+now using this to generalize the formulae for ETF
+
+
+now phi(pow(P,x))=pow(P,x-1)(P-1)
+
+now phi is multiplicative
+so we get
+
+phi(N)=(P1-1)(pow(P,x1-1)*(P2-1)pow(P,x2-1)*(P3-1)pow(P,x3-1)*.........*(P4-1)pow(P,Xk-1))
+
+multiplying and dividing by pi where i=1....K
+
+
+** phi(N)=N*((P1-1)/P1)*((P2-1)/P2)*((P3-1)/P3)*.........*((Pk-1)/Pk) **   time : sqrt(N)
+
+
+
+#implementation of phi(N) in n*sqrt(N) time [generalized formulae]
+
+
+int phi(int n)
+{
+  int res=n;
+
+  for(int i=2;i*i<=n;++i)
+  {
+    if(n%i==0)
+    {
+      res/=i;
+      res*=(i-1);
+
+      while(n%i==0)
+      n/=i;
+    }
+    if(n>1)
+    res/=n,res*=(n-1);
+  }
+  return res;
+}
+
+
+
+
+
+#implementation of euler phi in O(N log(logN))
+int mx=1e6+1
+int phi[mx];
+
+void init(int n)
+{
+  for(int i=1;i<=n;++i)
+  phi[i]=i;
+  for(int i=2;i<=n;++i)
+  {
+    if(phi[i]==i)
+    {
+      for(int j=i;j<=n;j+=i)
+      {
+        phi[j]/=i;
+        phi[j]*=(i-1);
+      }
+    }
+  }
+}

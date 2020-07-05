@@ -179,7 +179,17 @@
    -> https://www.codechef.com/problems/ECJAN20C
    
    
+   9) Modulo Inverse
    
+   theory: 
+          
+          https://cp-algorithms.com/algebra/module-inverse.html
+          
+          https://www.geeksforgeeks.org/multiplicative-inverse-under-modulo-m/
+          
+   practice:
+   
+          
    
       
    

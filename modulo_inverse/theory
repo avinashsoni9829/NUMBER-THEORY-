@@ -1,0 +1,71 @@
+#modulo multiplicative inverse
+
+division operator can be replaced with multiplicative inverse
+
+so for calculating (A/B)%P we can find the multiplicative inverse of b and use the
+modular arithmetice to find the result for division also
+
+ i,e (A/B)%P =(A*X)%P where X ,e the  modulo  multiplicative inverse of B
+             = ((A%P)*(X%P))%P
+
+ how to find X ?
+
+  modulo multiplicative inverse of a number N,under modulo P is defined to be a number X such that
+(A modular multiplicative inverse of an integer a is an integer x such that a⋅x is congruent to 1 modular some modulus  m)
+
+  N*X==1%P
+
+  condition for existence of modulo multiplicative inverse
+
+  so modulo inverse of N,under modulo P exist iff  GCD(N,P)=1
+
+
+  #ways to calculate modulo inverse
+
+  1)   fermat little theorem
+
+  2)   extended euclidean algorithm
+
+
+  #fermat little Theorem
+
+  for a prime no m and a integer a which is co-prime with m (gcd(m,a)=1) flt says that
+   pow(a,m-1)=1%m
+
+   division by a
+
+   pow(a,m-2)= (inverse a) %m
+
+
+   so to find the modulo inverse of a number under the modulo m
+   calculate pow(a,m-2) which will be (inverse a).
+
+
+  #extended euclidean algorithm
+
+  int extended_euclidean(int a, int b, int& x, int& y) {
+   x = 1, y = 0;
+   int x1 = 0, y1 = 1, a1 = a, b1 = b;
+   while (b1) {
+       int q = a1 / b1;
+       tie(x, x1) = make_tuple(x1, x - q * x1);
+       tie(y, y1) = make_tuple(y1, y - q * y1);
+       tie(a1, b1) = make_tuple(b1, a1 - q * b1);
+   }
+   return a1;
+}
+
+
+  int x,y;
+  int g=extended_euclidean(a,m,x,y);
+
+  if(g!=1)
+  {
+    cout<<"No solution!"<<endl;
+  }
+
+  else
+  {
+    x=(x%m+m)%m;
+    cout<<x<<endl;
+  }

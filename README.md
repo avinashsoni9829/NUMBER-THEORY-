@@ -183,9 +183,10 @@
    
    theory: 
           
-          https://cp-algorithms.com/algebra/module-inverse.html
+      
+   https://cp-algorithms.com/algebra/module-inverse.html
           
-          https://www.geeksforgeeks.org/multiplicative-inverse-under-modulo-m/
+   https://www.geeksforgeeks.org/multiplicative-inverse-under-modulo-m/
           
    practice:
    
